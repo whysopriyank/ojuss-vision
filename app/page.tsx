@@ -2,7 +2,7 @@
 "use client";
 import { useState, useCallback } from 'react';
 import CameraPreview from './components/CameraPreview';
-import { ScrollArea } from "@/components/ui/scroll-area";
+//import { ScrollArea } from "@/components/ui/scroll-area";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 // Helper function to create message components
