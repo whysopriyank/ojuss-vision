@@ -23,22 +23,22 @@ const HumanMessage = ({ text }: { text: string }) => (
   </div>
 );
 
-const GeminiMessage = ({ text }: { text: string }) => (
-  <div className="flex gap-3 items-start">
-    <Avatar className="h-8 w-8 bg-blue-600">
-      <AvatarImage src="/avatars/gemini.png" alt="Gemini" />
-      <AvatarFallback>AI</AvatarFallback>
-    </Avatar>
-    <div className="flex-1 space-y-2">
-      <div className="flex items-center gap-2">
-        <p className="text-sm font-medium text-zinc-900">Ojuss</p>
-      </div>
-      <div className="rounded-lg bg-white border border-zinc-200 px-3 py-2 text-sm text-zinc-800">
-        {text}
-      </div>
-    </div>
-  </div>
-);
+// const GeminiMessage = ({ text }: { text: string }) => (
+//   <div className="flex gap-3 items-start">
+//     <Avatar className="h-8 w-8 bg-blue-600">
+//       <AvatarImage src="/avatars/gemini.png" alt="Gemini" />
+//       <AvatarFallback>AI</AvatarFallback>
+//     </Avatar>
+//     <div className="flex-1 space-y-2">
+//       <div className="flex items-center gap-2">
+//         <p className="text-sm font-medium text-zinc-900">Ojuss</p>
+//       </div>
+//       <div className="rounded-lg bg-white border border-zinc-200 px-3 py-2 text-sm text-zinc-800">
+//         {text}
+//       </div>
+//     </div>
+//   </div>
+// );
 
 export default function Home() {
   const [messages, setMessages] = useState<{ type: 'Patient' | 'Ojuss', text: string }[]>([]);
