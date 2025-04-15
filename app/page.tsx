@@ -50,7 +50,7 @@ export default function Home() {
   return (
     <div className="container mx-auto px-4 py-6">
       <h1 className="text-4xl font-bold text-zinc-800 mb-6 text-center">
-        Ojuss Inspector
+        Ojuss AI
       </h1>
       
       <div className="flex flex-col gap-6 w-full max-w-3xl mx-auto">
@@ -60,20 +60,20 @@ export default function Home() {
         </div>
 
         {/* Transcript UI - Bottom Section */}
-        <div className="w-full bg-white rounded-lg border border-zinc-200 shadow-sm">
-          <ScrollArea className="h-[400px] p-4">
-            <div className="space-y-6">
-              <GeminiMessage text="Hi! I'm Ojuss. I can see and hear you. Let's chat!" />
-              {messages.map((message, index) => (
-                message.type === 'Patient' ? (
-                  <HumanMessage key={`msg-${index}`} text={message.text} />
-                ) : (
-                  <GeminiMessage key={`msg-${index}`} text={message.text} />
-                )
-              ))}
-            </div>
-          </ScrollArea>
-        </div>
+        // <div className="w-full bg-white rounded-lg border border-zinc-200 shadow-sm">
+        //   <ScrollArea className="h-[400px] p-4">
+        //     <div className="space-y-6">
+        //       <GeminiMessage text="Hi! I'm Ojuss. I can see and hear you. Let's chat!" />
+        //       {messages.map((message, index) => (
+        //         message.type === 'Patient' ? (
+        //           <HumanMessage key={`msg-${index}`} text={message.text} />
+        //         ) : (
+        //           <GeminiMessage key={`msg-${index}`} text={message.text} />
+        //         )
+        //       ))}
+        //     </div>
+        //   </ScrollArea>
+        // </div>
       </div>
     </div>
   );
